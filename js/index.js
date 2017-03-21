@@ -19,12 +19,18 @@ $(document).ready(function(){
         $('#switch-en').css('font-weight','bold')
         $('#switch-fr').css('font-weight','normal')
     });
+
+
+    checkDivVisibility();
 });
 
 
 $(window).scroll(function () {
+    checkDivVisibility();
+});
 
-    $('.row').each(function(){
+function checkDivVisibility() {
+        $('.row').each(function(){
         var pos = $(this).offset(),
             wX = $(window).scrollLeft(), wY = $(window).scrollTop(),
             wH = $(window).height(), wW = $(window).width(),
@@ -50,4 +56,4 @@ $(window).scroll(function () {
             $(this).children().hide();
         }*/
     });
-});
+}

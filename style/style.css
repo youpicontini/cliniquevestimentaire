@@ -1,9 +1,20 @@
 html, body {margin: 0; padding: 0;}
 
+@font-face {
+  font-family: MontSerrat;
+  src: url("./fonts_montserrat/._MontSerrat-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: MontSerrat;
+  src: url("./fonts_montserrat/._MontSerrat-Ultralight.otf");
+  font-weight: 100;
+}
+
 body{
     padding: 50px 100px;
     font-size: 12px;
-	font-family: "Courier New", monospace;
+	font-family: MontSerrat,"Courier New", monospace;
     background-color: black;
     color: white;
 }
@@ -20,6 +31,7 @@ header{
     width:100%;
     position:fixed;
     margin-top: -50px;
+    margin-left: -100px;
     padding-top: 50px;
     height:80px;
     background: black;
@@ -31,9 +43,14 @@ header{
     background: linear-gradient(black,black,  black,   transparent);
 }
 
+
+footer{
+    margin-top: 20px;
+}
 .logo{
     width: auto;
     position:fixed;
+    margin-left: 100px;
 }
 .infos{
     position:fixed;
@@ -64,8 +81,9 @@ header{
 
     margin-top: 100px;
     width: 100%;
-    font-size: 40px;
-    color: grey;
+    font-size: 69px;
+    color: #717171;
+    font-weight: 100;
 }
 .brand-philosophy span{
     text-decoration: line-through;
@@ -90,20 +108,61 @@ header{
     /*background-color: white;
     color: black;*/
 }
+.portfolio{
+    margin-left: -100px;
+    margin-right: -100px;
+}
 
 .portfolio .row .landscape{
     display: inline-block;
-    width : 66%;
+    width : 66.6666%;
+
 }
 .portfolio .row .portrait{
     display: inline-block;
-    width : 33%;
+    width : 33.3333%;
+}
+
+.portfolio .row .mid{
+    display: inline-block;
+    width : 50%;
 }
 
 .portfolio .row{
- /*minimum-height:1px;*/
+     font-size: 0px;
 }
 
-.portfolio .row .landscape, .portfolio .row .portrait{
+.portfolio .row .landscape, .portfolio .row .portrait, .portfolio .row .mid{
     display: none;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+input{
+    background-color: transparent;
+    border-width: 1px;
+    color: #717171;
+    margin-left: 15px;
+    padding: 5px 11px;
+    border-color: #717171;
+    font: 12px Montserrat;
+    border-style: solid;
+}
+
+input:focus{
+    outline: none;
+}
+
+#valid_mail{
+    color: #717171;
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    border: 1px solid #717171;
+    font-size: 17px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: -4px;
+    cursor: pointer;
 }
