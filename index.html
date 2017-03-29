@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 <head manifest="offline.appcache">
 
     <title>Clinique Vestimentaire</title>
@@ -12,18 +14,33 @@
     <script src="lib/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="js/index.js" type="text/javascript"></script>
 
+    <!-- Google Fonts embed code -->
+    <script type="text/javascript">
+        (function() {
+            var link_element = document.createElement("link"),
+                s = document.getElementsByTagName("script")[0];
+            if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                link_element.href = "http:";
+            }
+            link_element.href += "//fonts.googleapis.com/css?family=Montserrat:400,700";
+            link_element.rel = "stylesheet";
+            link_element.type = "text/css";
+            s.parentNode.insertBefore(link_element, s);
+        })();
+    </script>
+
 </head>
 <body>
     <header>
-        <img class="logo" src="img/logo/logo.png">
+        <img class="logo" src="img/logo/logo2.png">
         <div class="infos">
             <div class="mail-contact">
                 contact@cliniquevestimentaire.com
             </div>
             <div class="socials">
-                <!--a target="_blank" href="https://www.facebook.com/cliniquevestimentaire" >
-                    <img src="img/fb.png">
-                </a-->
+                <a target="_blank" href="https://www.facebook.com/cliniquevestimentaire" >
+                    <img src="img/logo/fb.png">
+                </a>
                 <a target="_blank" href="https://www.instagram.com/clinique.vestimentaire" >
                     <img src="img/logo/ig.png">
                 </a>
@@ -86,9 +103,8 @@
         </div>
     </div>
     <footer>
-        <div class="collection">
-            <span class="fr" >COLLECTION: FIN 2K17</span>
-            <span class="en" >COLLECTION: END 2K17</span>
+        <div class="tiret">
+            
         </div>
         <div class="newsletter">
             s'abonner à la newsletter

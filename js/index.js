@@ -20,6 +20,8 @@ $(document).ready(function(){
         $('#switch-fr').css('font-weight','normal')
     });
 
+    $('.brand-philosophy').css('min-height',$( window ).height()-100);
+
 
     checkDivVisibility();
 });
@@ -36,6 +38,8 @@ function checkDivVisibility() {
             wH = $(window).height(), wW = $(window).width(),
             oH = $(this).outerHeight(), oW = $(this).outerWidth();
 
+
+        var fadeDelay = 400;
         // check the edges
         if (pos.left >= wX && pos.top >= wY &&
             oW + pos.left <= wX + wW && oH + pos.top <= wY + wH )
@@ -49,8 +53,8 @@ function checkDivVisibility() {
             ((pos.top <= wY && pos.top + oH > wY)   ||
                 (pos.top  >= wY && pos.top  <= wY + wH)))
             {
-                $(this).children( '.first' ).fadeIn(1000);
-                $(this).children('.second').delay(1000).fadeIn(1000);
+                $(this).children( '.first' ).fadeIn(400);
+                $(this).children('.second').delay(1000).fadeIn(400);
             }
         /*else{
             $(this).children().hide();

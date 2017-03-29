@@ -2,12 +2,12 @@ html, body {margin: 0; padding: 0;}
 
 @font-face {
   font-family: MontSerrat;
-  src: url("./fonts_montserrat/._MontSerrat-Regular.otf");
+  src: url("./fonts_montserrat/._MontSerrat-Regular.otf") format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: MontSerrat;
-  src: url("./fonts_montserrat/._MontSerrat-Ultralight.otf");
+  src: url("./fonts_montserrat/._MontSerrat-Ultralight.otf") format('truetype');
   font-weight: 100;
 }
 
@@ -34,21 +34,21 @@ header{
     margin-left: -100px;
     padding-top: 50px;
     height:80px;
-    background: black;
+    /*background: black;
 
     background: -webkit-linear-gradient(black, black,  black, transparent);
     background: -o-linear-gradient(black,black,  black,  transparent);
     background: -moz-linear-gradient(black,black,  black,  transparent);
 
     background: linear-gradient(black,black,  black,   transparent);
-}
+*/}
 
 
 footer{
     margin-top: 20px;
 }
 .logo{
-    width: auto;
+    width: 147px;
     position:fixed;
     margin-left: 100px;
 }
@@ -97,14 +97,23 @@ footer{
 .newsletter{
     display: inline-block;
     float: right;
+    position: fixed;
+    right:100px;
+    bottom:40px;
 }
 .newsletter a{
     text-decoration: underline;
 }
 
 
-.collection{
+.tiret{
     display: inline-block;
+    background-color: white;
+    width:48px;
+    height:3px;
+    position: fixed;
+    left:100px;
+    bottom:50px;
     /*background-color: white;
     color: black;*/
 }
