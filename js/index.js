@@ -44,8 +44,8 @@ function checkDivVisibility() {
         if (pos.left >= wX && pos.top >= wY &&
             oW + pos.left <= wX + wW && oH + pos.top <= wY + wH )
             {
-                $(this).children( '.first' ).fadeIn(1000);
-                $(this).children('.second').delay(1000).fadeIn(1000);
+                $(this).children( '.first' ).fadeIn(400);
+                $(this).children('.second').delay(1000).fadeIn(400);
             }
         else
         if (((pos.left <= wX && pos.left + oW > wX) ||
@@ -56,8 +56,10 @@ function checkDivVisibility() {
                 $(this).children( '.first' ).fadeIn(400);
                 $(this).children('.second').delay(1000).fadeIn(400);
             }
-        /*else{
-            $(this).children().hide();
-        }*/
+        else{
+            if($(this).is(':visible')){
+                $(this).children().fadeOut(200);
+            }
+        }
     });
 }
